@@ -1,0 +1,33 @@
+{
+  "name": "techdegree-fsjs-project-06",
+  "version": "1.0.0",
+  "description": "Content Scraper | Dan Robertson | Full Stack Javascript - Techdegree | Treehouse",
+  "main": "scraper.js",
+  "dependencies": {
+    "crawler": "^1.1.4",
+    "json2csv": "^4.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanRxn/techdegree-fsjs-project-06.git"
+  },
+  "keywords": [
+    "content",
+    "scraper",
+    "scraper",
+    "treehouse",
+    "techdegree",
+    "full-stack",
+    "javascript"
+  ],
+  "author": "Dan Robertson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanRxn/techdegree-fsjs-project-06/issues"
+  },
+  "homepage": "https://github.com/DanRxn/techdegree-fsjs-project-06#readme"
+}
