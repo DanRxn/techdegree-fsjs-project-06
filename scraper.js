@@ -28,8 +28,13 @@ function getProductLinks(error, res, done) {
 	} else {
 		let $ = res.$;
 		$('a').each(function(i, elem) {
-			const link = $(this).attr('href');
-			productLinks.push(link);
+			let link = $(this).attr('href');
+			if (link.startsWith('shirt.php?')) {
+				// Make link the absolute address, not relative
+				link = `http://shirts4mike.com/${link}`;
+				// Add link to productLinks array
+				productLinks.push(link);
+			}
 		});
 	}
 	done();
