@@ -1,3 +1,6 @@
+# App output data
+data/
+
 # Logs
 logs
 *.log
