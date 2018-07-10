@@ -14,5 +14,34 @@ function createDataFolder() {
 }
 createDataFolder();
 
+// Craw homepage for product links
+const homepage = 'http://shirts4mike.com/shirts.php';
+let productLinks = [];
+
+// Declare array of objects (to-be attrs: Title, Price, ImageURL, URL, Time)
+let scrapedData = [];
+
+	// Callback for getting product links
+function getProductLinks(error, res, done) {
+	if(error) {
+		console.error(error);
+	} else {
+		let $ = res.$;
+		$('a').each(function(i, elem) {
+			const link = $(this).attr('href');
+			productLinks.push(link);
+		});
+	}
+	done();
+	console.log('productLinks: ', productLinks);
+}
+
+let crawlHomepage = new Crawler({
+	maxConnections : 10,
+	callback : getProductLinks
+});
+
+crawlHomepage.queue(homepage);
+
 // Log to the console that the script was run
 console.log("✅ scraper.js was run!");
