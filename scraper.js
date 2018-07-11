@@ -29,6 +29,7 @@ createDataFolder();
 
 	// Helper functions
 	// ---------------
+	
 // Make relative path into absolute URL
 function getAbsoluteUrl(relativeUrl) {
 	return `http://shirts4mike.com/${relativeUrl}`;
