@@ -3,7 +3,7 @@ const fs = require('fs'); // For file system interactions
 const Crawler = require('crawler'); // For the Crawler npm module
 const Json2csvParser = require('json2csv').Parser; // For the json2csv npm module
 
-// Delcar vars to crawl homepage for product links
+// Delcare vars to crawl homepage for product links
 const entryPage = 'http://shirts4mike.com/shirts.php';
 let productLinks = [];
 
